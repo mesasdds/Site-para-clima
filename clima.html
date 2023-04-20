@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Busca climática</title>
+	<link rel="stylesheet" href="teste.css">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card__image-container">
+				<img class="card__image" id="img">
+		  	</div>
+		  
+			<div class="card__content">
+				<h2 class="card__title" id="location"></h2>
+				<p id="country_Check"></p>
+		   		<p id="temperature"></p>
+				<p id="weather"></p>
+			</div>
+
+			<div class="card__input-content">
+				<label class="card__input-label" for="city">Digite o nome da cidade:</label>
+				<input class="card__input" type="text" id="city" name="city">
+			</div>
+
+			<div class="card__button-content">
+				<button class="card__button_city" id="search-btn">Buscar</button>	
+				<button class="card__button_loc" id="location-btn">Localização atual</button>	
+			</div>
+
+			<footer class="footer_info">
+				<p>Para Localizações mais precisas, utilize a Localização atual</p>
+			</footer>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Estilo geral */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilo do card */
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+  
+  .card__image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card__image {
+    width: 100px;
+  }
+  
+  .card__title {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .card__input-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .card__input {
+    width: 100%;
+    padding: 10px;
+    background-color: #f3e7e7;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card__button_city,
+  .card__button_loc {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .card__button_city:hover,
+  .card__button_loc:hover {
+    background-color: #3e8e41;
+  }
+  
+  .footer_info {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    color: #777;
+  }
