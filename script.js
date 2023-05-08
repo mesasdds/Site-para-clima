@@ -10,7 +10,7 @@ const imagem = document.getElementById('img');
 
 searchBtn.addEventListener('click', () => {
 	const cityName = cityInput.value;
-	const apiKey = 'SUA KEY AQUI';
+	const apiKey = process.env.CONVERTKIT_API_SECRET;
 	const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&lang=pt_br&units=metric`;
 
 	fetch(apiUrl)
@@ -59,7 +59,7 @@ locationBtn.addEventListener('click', () => {
 		navigator.geolocation.getCurrentPosition(position => {
 			const lat = position.coords.latitude;
 			const lon = position.coords.longitude;
-			const apiKey = 'SUA KEY AQUI';
+			const apiKey = process.env.CONVERTKIT_API_SECRET;
 			const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&lang=pt_br&units=metric`;
 
 			fetch(apiUrl)
